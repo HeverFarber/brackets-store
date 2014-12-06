@@ -1,0 +1,18 @@
+{
+  "name": "BracketStore",
+  "version": "0.1.0",
+  "description": "crawler it is downloading all extensions available on bracket registry, for offline network",
+  "main": "server.js",
+  "dependencies": {
+      "request": "~2.48.0",
+      "async": "~0.9.0",
+      "download": "~3.1.2",
+      "download-status": "~2.1.0",
+      "express": "~4.10.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hever Farber",
+  "license": "MIT"
+}
