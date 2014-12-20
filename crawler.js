@@ -12,6 +12,9 @@ var VERSION_REG = /^[0-9.-_a-zA-Z]*$/
 request({method: 'GET', gzip: true, uri: 'https://s3.amazonaws.com/extend.brackets/registry.json'}, function (error, response, body) {
     var packages = JSON.parse(body);
     
+    if (!fs.existsSync(STORAGE_PATH))
+        fs.mkdir(STORAGE_PATH);
+    
     fs.writeFileSync(STORAGE_PATH + '/registry.json', JSON.stringify(packages));
     
     var size = Object.keys(packages).length, counter = 1;

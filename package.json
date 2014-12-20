@@ -1,6 +1,6 @@
 {
   "name": "bracket-store",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "crawler it is downloading all extensions available on bracket registry, for offline network",
   "keywords" : ["bracket", "offline", "extension"],
   "main": "server.js",
