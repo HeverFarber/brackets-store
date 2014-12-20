@@ -1,11 +1,12 @@
-Bracket Store
+Brackets Store
 =============
 
 Solution for developers who work in disconnected networks
 
 ## how to install
 ```
-npm install bracket-store
+npm install brackets-store
+git clone https://github.com/Sparta-Code/brackets-store.git
 ```
 
 ## how to use
