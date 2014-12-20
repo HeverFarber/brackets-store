@@ -1,17 +1,27 @@
 {
   "name": "BracketStore",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "crawler it is downloading all extensions available on bracket registry, for offline network",
+  "keywords" : ["bracket", "offline", "extension"],
   "main": "server.js",
-  "dependencies": {
-      "request": "~2.48.0",
-      "async": "~0.9.0",
-      "download": "~3.1.2",
-      "download-status": "~2.1.0",
-      "express": "~4.10.4"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sparta-Code/BracketStore.git"
   },
+  "dependencies": {
+    "async": "^0.9.0",
+    "download": "^3.2.0",   
+    "download-status": "^2.1.0",
+    "express": "^4.10.6",
+    "request": "^2.51.0",
+    "tough-cookie": "^0.12.1"
+  }, 
+  "config" : { "port" : "8080" },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "update": "node crawler.js",
+    "start": "node server.js",
+    "change": "node change.js", 
+    "restore": "node change.js restore"
   },
   "author": "Hever Farber",
   "license": "MIT"
