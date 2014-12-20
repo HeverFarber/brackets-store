@@ -5,7 +5,7 @@ Solution for developers who work in disconnected networks
 
 ## how to install
 ```
-npm install BracketStore
+npm install bracket-store
 ```
 
 ## how to use
